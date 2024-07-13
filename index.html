@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript fast</title>
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+        <!-- example no.1 -->
+        <h3>Example no.1</h3>
+        <h5 class="text-dark">Click the button to change the text</h5>
+        <button onclick="textChange()" type="button" class="btn btn-dark">Click to change the text.</button>
+        <h3 id="t_c">hello</h3>
+        <br>
+
+        <!-- example no.2 -->
+        <h3>Example no.2</h3>
+        <h5>click the button to show the date.</h5>
+        <button onclick="showDate()" type="button" class="btn btn-dark">click to show the date</button>
+        <h3 id="t_d">date.</h3>
+        <br>
+
+        <!-- example no.3 -->
+        <h3>Example no.3</h3>
+        <h5>click the button to like/love.</h5>
+        <button onclick="clickLike()" type="button" class="btn btn3_1">like</button>
+        <button onclick="clickLove()" type="button" class="btn btn3_2">love</button>
+        <img id="ex3_img" src="images/faces.jpeg" alt="#">
+        <br><br>
+
+        <!-- example no.4 -->
+        <h3>Example no.4</h3>
+        <h5>click the button to change text color.</h5>
+        <button onclick="colorChange()" type="button" class="btn btn-dark">click to change</button>
+        <h3 id="tc_change">Hello world</h3>
+        <br>
+
+        <!-- example no.5 -->
+        <h3>Example no.5</h3>
+        <h5>click the button to show/hide the text.</h5>
+        <button onclick="showText()" type="button" class="btn btn3_1">show</button>
+        <button onclick="hideText()" type="button" class="btn btn3_2">hide</button>
+        <h6 id="showHide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur temporibus dolorem quae voluptatem quam!</h6>
+        <br>
+
+        <!-- example no.6 -->
+        <h3>Example no.6</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="dWrite()" type="button" class="btn btn-dark">click here</button>
+        <br><br>
+
+        <!-- example no.7 -->
+        <h3>Example no.7</h3>
+        <h5>click the button to show the window alert.</h5>
+        <button onclick="wAlert()" type="button" class="btn btn3_2">click here</button>
+        <br><br>
+
+        <!-- example no.8 -->
+        <h3>Example no.8</h3>
+        <h5>click the button to show the data in console log.</h5>
+        <button onclick="cLog()" type="button" class="btn btn-dark">click here</button>
+        <br><br>
+
+        <!-- example no.9 -->
+        <h3>Example no.9</h3>
+        <h5>click the button to show addition:</h5>
+        <button onclick="rAddition()" type="button" class="btn btn-dark">click to result</button>
+        <h2 id="r_a">5+4=?</h2>
+        <br><br>
+ 
+ 		<!-- example no.10  -->
+ 		<h3>Example no.10</h3>
+		<h5 class="text-dark">Click the button to show the Substraction result</h5>
+		<button class="btn btn-dark" onclick="rSubstraction()">5-2</button>
+		<h3 id="r_s">The result is</h3>
+
+		<br><br>
+        <!-- example no.11 -->
+        <h3>Example no.11</h3>
+		<h5 class="text-dark">Click the button to show Multiplication result</h5>
+		<button class="btn btn-dark" onclick="rMultiplication()">5*6</button>
+		<h3 id="r_m">The result is</h3>
+		<br><br>
+        <!-- example no.12 -->
+        <h3>Example no.12</h3>
+        <h5>click the button to print a page.</h5>
+        <button onclick="printPage()" type="button" class="btn btn-dark">click to print</button>
+        <br><br>
+
+        <!-- example no.13 -->
+        <h3>Example no.13</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="vMessage()" type="button" class="btn btn-dark">clik to resust</button>
+        <h2 id="v_m"></h2>
+        <br><br>
+
+        <!-- example no.14 -->
+        <h3>Example no.14</h3>
+        <h5>click the button to show the text repeat.</h5>
+        <button onclick="tRepeat()" type="button" class="btn btn-dark">clik for text repeat</button>
+        <h2 id="t_p"></h2>
+        <br><br>
+
+        <!-- example no.15 -->
+        <h3>Example no.15</h3>
+        <h5>click the button to show the class selector.</h5>
+        <button onclick="cSelector()" type="button" class="btn btn-dark">clik here</button>
+        <p class="p">Lorem, ipsum dolor.</p>
+        <p class="p">Lorem, ipsum dolor.</p>
+        <p class="p">Lorem, ipsum dolor.</p>
+        <p class="p">Lorem, ipsum dolor.</p>
+        <br><br>
+
+        <!-- example no.16 -->
+        <h3>Example no.16</h3>
+        <h5>click the button to count the element.</h5>
+        <button onclick="countElement()" type="button" class="btn btn-dark">clik here</button>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <br><br>
+
+        <!-- example no.17 -->
+        <h3>Example no.17</h3>
+        <h5>Double click the button to change the image.</h5>
+        <button ondblclick="doubleClick()" type="button" class="btn btn-dark">clik here</button>
+        <img id="ex17_img" src="images/faces.png" alt="#">
+        <br><br>
+
+        <!-- example no.18 -->
+        <h3>Example no.18</h3>
+        <h5>Just place the mouse over the button and view the data.</h5>
+        <button onmousemove="overMouse()" type="button" class="btn overMouse_btn">place the mouse here</button>
+        <br><br>
+
+        <!-- example no.19 -->
+        <h3>Example no.19</h3>
+        <h5>place the mouse on the textarea and move.<br>You will get a warning</h5>
+        <textarea class="ex19_textarea" type="text" id="l_mouse" onmouseleave="leaveMouse()" placeholder="type here"></textarea>
+        <br><br>
+
+        <!-- example no.20 -->
+        <h3>Example no.20</h3>
+        <h5>click the button to show booleans values: true or false.</h5>
+        <button onclick="booleansValue()" type="button" class="btn btn-dark">click here for true or false</button>
+        <h6 id="b_v">
+            number11 = 10;<br>
+            number22 = 10;<br>
+            number33 = 20;<br>
+            number11 == number22<br>
+            number11 == number33 
+        </h6>
+        <br><br>
+
+        <!-- example no.21 -->
+        <h3>Example no.21</h3>
+        <h5>click the button to show a variable.</h5>
+        <button onclick="VariableCreat()" type="button" class="btn btn-dark">clik to show a variable</button>
+        <h4 id="v_creat"></h4>
+        <br><br>
+
+        <!-- example no.22 -->
+        <h3>Example no.22</h3>
+        <h5>click the button to show an object.</h5>
+        <button onclick="showObject()" type="button" class="btn btn-dark">clik to show an object</button>
+        <h4 id="s_object"></h4>
+        <br><br>
+
+        <!-- example no.23 -->
+        <h3>Example no.23</h3>
+        <h5>click the button to show an object Literal.</h5>
+        <button onclick="objectLiteral()" type="button" class="btn btn-dark">clik to show the object loteral</button>
+        <h4 id="o_literal"></h4>
+        <br><br>
+
+        <!-- example no.24 -->
+        <h3>Example no.24</h3>
+        <h5>click the button to show using the new kyword.</h5>
+        <button onclick="newKyword()" type="button" class="btn btn-dark">clik here</button>
+        <h4 id="n_kyword"></h4>
+        <br><br>
+
+        <!-- example no.25 -->
+        <h3>Example no.25</h3>
+        <h5>click the button to show object changing.</h5>
+        <button onclick="objectChanging()" type="button" class="btn btn-dark">clik to show the change</button>
+        <h4 id="o_changing"></h4>
+        <br><br>
+
+        <!-- example no.26 -->
+        <h3>Example no.26</h3>
+        <h5>A method is a function definition stored as a property value.</h5>
+        <button onclick="definitionStore()" type="button" class="btn btn-dark">clik here</button>
+        <h4 id="d_sotre"></h4>
+        <br><br>
+
+        <!-- example no.27 -->
+        <h3>Example no.27</h3>
+        <h5>click the button to show the output [object Object].</h5>
+        <button onclick="outputObject()" type="button" class="btn btn-dark">clik here</button>
+        <h4 id="output_ob"></h4>
+        <br><br>
+
+        <!-- example no.28 -->
+        <h3>Example no.28</h3>
+        <h5>click the button to show the objects in loops.</h5>
+        <button onclick="objectsInLoops()" type="button" class="btn btn-dark">clik here</button>
+        <h4 id="ov_inL"></h4>
+        <br><br>
+
+        <!-- example no.29 -->
+        <h3>Example no.29</h3>
+        <h5>click the button to show the time.</h5>
+        <button id="show_theTm" onclick="showTHeTime()" type="button" class="btn btn-dark">The time is?</button>
+        <h4 id=""></h4>
+        <br><br>
+
+        <!-- example no.30 -->
+        <h3>Example no.30</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="carName()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="car_name"></h4>
+        <br><br>
+
+        <!-- example no.31 -->
+        <h3>Example no.31</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="qAns()" type="button" class="btn btn-dark">click to ans</button>
+        <h4 id="q_ans"></h4>
+        <br><br>
+
+        <!-- example no.32 -->
+        <h3>Example no.32</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="jsStrings()" type="button" class="btn btn-dark">click to ans</button>
+        <h4 id="js_st"></h4>
+        <br><br>
+
+        <!-- example no.33 -->
+        <h3>Example no.33</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="stringsVinking()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="st_vin"></h4>
+        <br><br>
+
+        <!-- example no.34 -->
+        <h3>Example no.34</h3>
+        <h5>Templates are not supported in Internet Explorer.</h5>
+        <button onclick="internetExplorer()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="in_explorer"></h4>
+        <br><br>
+
+        <!-- example no.35 -->
+        <h3>Example no.35</h3>
+        <h5>click the button to show the js object string.</h5>
+        <button onclick="obString()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="ob_string"></h4>
+        <br><br>
+
+        <!-- example no.36 -->
+        <h3>Example no.36</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="charAtMethod()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="ch_me">Hello world</h4>
+        <br><br>
+
+        <!-- example no.37 -->
+        <h3>Example no.37</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="matchAll()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="m_all"></h4>
+        <br><br>
+
+        <!-- example no.38 -->
+        <h3>Example no.38</h3>
+        <h5>click the button to show the text.</h5>
+        <button onclick="templatesAllow()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="tem_allow"></h4>
+        <br><br>
+
+        <!-- example no.39 -->
+        <h3>Example no.39</h3>
+        <h5>click the button to show the result.</h5>
+        <button onclick="variablesStrings()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="va_stn"></h4>
+        <br><br>
+
+        <!-- example no.40 -->
+        <h3>Example no.40</h3>
+        <h5>Extra large or extra small numbers can be written with scientific (exponent) notation.</h5>
+        <button onclick="extraSmLg()" type="button" class="btn btn-dark">click to show it</button>
+        <h4 id="sm_lg"></h4>
+        <br><br>
+
+        <!-- example no.41 -->
+        <h3>Example no.41</h3>
+        <h5>click the button to show the  toString() method.</h5>
+        <button onclick="toStringMethod()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="st_mtd"></h4>
+        <br><br>
+
+        <!-- example no.42 -->
+        <h3>Example no.42</h3>
+        <h5>click the button to show the  MAX_VALUE Property.</h5>
+        <button onclick="maxValue()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="mx_vl"></h4>
+        <br><br>
+
+        <!-- example no.43 -->
+        <h3>Example no.43</h3>
+        <h5>click the button to show the  js arrays.</h5>
+        <button onclick="jsArray()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="js_array"></h4>
+        <br><br>
+
+        <!-- example no.44 -->
+        <h3>Example no.44</h3>
+        <h5>click the button to show the toSorted() Method.</h5>
+        <button onclick="toSortedMethod()" type="button" class="btn btn-dark">click here</button>
+        <h4 id="toS_met"></h4>
+        <br><br>
+
+        <!-- example no.45 -->
+        <h3>Example no.45</h3>
+        <h5>click the button to show the js Using new Date().</h5>
+        <button onclick="newDate()" type="button" class="btn btn-dark">click to show the new date.</button>
+        <h4 id="new_dt"></h4>
+        <br><br>
+
+        <!-- example no.46 -->
+        <h3>Example no.46</h3>
+        <h5>click the button to show the js ISO Dates.</h5>
+        <button onclick="isoDate()" type="button" class="btn btn-dark">click to show the iso date.</button>
+        <h4 id="iso_date"></h4>
+        <br><br>
+
+        <!-- example no.47 -->
+        <h3>Example no.47</h3>
+        <h5>click the button to show the js setFullYear() method.</h5>
+        <button onclick="setFullYear()" type="button" class="btn btn-dark">click here.</button>
+        <h4 id="setF_ye"></h4>
+        <br><br>
+
+        <!-- example no.48 -->
+        <h3>Example no.48</h3>
+        <h5>click the button to show the js math() random.</h5>
+        <button onclick="mathRandom()" type="button" class="btn btn-dark">click here.</button>
+        <h4 id="ma_ran"></h4>
+        <br><br>
+
+        <!-- example no.49 -->
+        <h3>Example no.49</h3>
+        <h5>click the button to show the js Booleans.</h5>
+        <button onclick="jsBooleans()" type="button" class="btn btn-dark">click to result.</button>
+        <h4 id="js_booleans">(10 > 9)</h4>
+        <br><br>
+
+        <!-- example no.50 -->
+        <h3>Example no.50</h3>
+        <h5>click the button to show the js switch.</h5>
+        <button onclick="jsSwitch()" type="button" class="btn btn-dark">click here.</button>
+        <h4 id="js_switch"></h4>
+        <br><br>
+
+
+
+        
+
+
+    </div>
+
+
+
+	<!-- script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+    <script src="js/script.js"></script>
+</body>
+</html>
+
